@@ -3,10 +3,10 @@ output "aws_asn" {
 }
 
 
-# output "aws_vpn_connection_1" {
-#   sensitive = true
-#   value     = aws_vpn_connection.aws-vpn-connection-1
-# }
+output "aws_vpn_connection_1" {
+  sensitive = true
+  value     = aws_vpn_connection.aws-vpn-connection-1
+}
 
 # output "aws_customer_gateway_1_ip" {
 #   value = aws_customer_gateway.aws-cgw-1.ip_address
