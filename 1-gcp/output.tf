@@ -1,3 +1,9 @@
+output "gcp_vpn_gateway_id" {
+  value = google_compute_ha_vpn_gateway.vpn-gateway-ha.id
+}
+output "gcp_cloud_router_id" {
+  value = google_compute_router.vpn-router-ha.id
+}
 output "gcp_vpn_gateway_ip_1" {
   value = google_compute_ha_vpn_gateway.vpn-gateway-ha.vpn_interfaces[0].ip_address
 }
