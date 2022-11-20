@@ -37,10 +37,10 @@ output "aws_customer_vgw_1_tunnel2_ip" {
 # output "aws_customer_gateway_2_ip" {
 #   value = aws_customer_gateway.aws-cgw-2.ip_address
 # }
-output "aws_customer_vpn_2_tunnel1_ip" {
+output "aws_customer_vgw_2_tunnel1_ip" {
   value = aws_vpn_connection.aws-vpn-connection-2.tunnel1_address
 }
-output "aws_customer_vpn_2_tunnel2_ip" {
+output "aws_customer_vgw_2_tunnel2_ip" {
   value = aws_vpn_connection.aws-vpn-connection-2.tunnel2_address
 }
 ## Inside address
