@@ -7,6 +7,10 @@ variable "preshared_key" {
   description = "VPN shared key between aws gcp"
 }
 
+variable "aws_asn" {
+  type        = string
+  description = "AWS ASN"
+}
 variable "gcp_region" {
   type        = string
   description = "GCP region"

@@ -1,6 +1,7 @@
 resource "google_compute_vpn_tunnel" "tunnel1" {
   count                           = 4
   name                            = format("ha-vpn-tunnel-%s", count.index)
+  ike_version                     = 1
   region                          = var.gcp_region
   vpn_gateway                     = var.gcp_vpn_gateway_id
   peer_external_gateway           = google_compute_external_vpn_gateway.external_gateway.id
